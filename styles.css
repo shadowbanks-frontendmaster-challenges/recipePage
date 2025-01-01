@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 :root {
@@ -11,9 +12,9 @@
   --Stone-600: hsl(30, 10%, 34%);
   --Stone-900: hsl(24, 5%, 18%);
   --Brown-800: hsl(14, 45%, 36%);
-  --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
-  --title-preset: "Young Serif", Georgia, "Times New Roman", Times, serif;
+  --Rose-800: hsl(332, 51%, 32%);
+  --title-font: "Young Serif", Georgia, "Times New Roman", Times, serif;
   --primary-font: "Outfit", Arial, Helvetica, sans-serif;
   --font-weight-1: 400;
   --font-weight-2: 600;
@@ -28,10 +29,78 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--primary-font);
+  color: var(--Stone-600);
+}
+
+ul,
+ol {
+  list-style-position: inside;
 }
 
 .cover-img {
   width: 100%;
   height: 10rem;
   object-fit: fill;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.intro-container {
+  width: 100%;
+}
+
+.recipeName {
+  font-family: var(--title-font);
+  font-weight: var(--font-weight-1);
+  color: var(--Stone-900);
+  line-height: 1;
+}
+
+.intro {
+  margin: 1rem 0;
+}
+
+.prep-container {
+  background-color: var(--Rose-50);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+}
+
+.prep-container h3 {
+  color: var(--Rose-800);
+  margin: 0.3rem 0;
+}
+
+ul {
+  margin-right: 2rem;
+}
+
+li {
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  font-size: 1.3rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prepTime-item strong {
+  /* padding-left: 0.5rem; */
 }
