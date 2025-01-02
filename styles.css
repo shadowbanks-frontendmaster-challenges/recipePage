@@ -80,9 +80,10 @@ h2 {
   margin: 2rem 0;
 }
 
-.prep-container h3 {
+.prep-container .prepTime-title {
   color: var(--Rose-800);
   margin: 0.3rem 0;
+  font-size: 1.2rem;
 }
 
 ul,
@@ -171,7 +172,7 @@ ol li {
     margin-bottom: 2rem;
     height: 18rem;
   }
-  .prep-container{
+  .prep-container {
     margin-bottom: 1.5rem;
   }
   .instruction-container {
