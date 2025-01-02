@@ -123,8 +123,6 @@ ol li {
   margin-bottom: 0.5rem;
 }
 .instruction-container {
-  /* margin-bottom: 1rem; */
-  /* margin-right: .5rem; */
   padding: 0 0.2rem;
 }
 
@@ -159,12 +157,9 @@ ol li {
 }
 
 @media (min-width: 720px) {
-  html {
-    font-size: 14px;
-  }
   .main {
     width: 45rem;
-    margin: 10vh 0;
+    margin: 15vh 0;
     border-radius: 20px;
     padding: 2rem;
   }
@@ -174,7 +169,7 @@ ol li {
   .cover-img {
     border-radius: 10px;
     margin-bottom: 2rem;
-    height: 17.5rem;
+    height: 18rem;
   }
   .prep-container{
     margin-bottom: 1.5rem;
