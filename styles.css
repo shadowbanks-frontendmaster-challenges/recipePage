@@ -33,11 +33,6 @@ body {
   color: var(--Stone-600);
 }
 
-ul,
-ol {
-  list-style-position: inside;
-}
-
 .cover-img {
   width: 100%;
   height: 10rem;
@@ -52,20 +47,31 @@ ol {
   width: 100%;
 }
 
-.recipeName {
+.title {
   font-family: var(--title-font);
+  color: var(--Brown-800);
+  margin-bottom: 1rem;
   font-weight: var(--font-weight-1);
-  color: var(--Stone-900);
-  line-height: 1;
+  margin-top: 0;
+}
+.intro-container .recipeName {
+    font-weight: var(--font-weight-1);
+    color: var(--Stone-900);
+    line-height: 1;
+    margin-bottom: 2rem;
 }
 
 .intro {
-  margin: 1rem 0;
+    margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 .prep-container {
   background-color: var(--Rose-50);
-  padding: 1rem;
+  padding: 1rem 1rem 1.8rem 1rem;
   border-radius: 0.8rem;
   margin: 2rem 0;
 }
@@ -75,21 +81,20 @@ ol {
   margin: 0.3rem 0;
 }
 
+ul,
+ol {
+  list-style-position: inside;
+}
+
 ul {
   margin-right: 2rem;
-}
-
-li {
-  margin-top: 0.5rem;
-  padding-left: 2rem;
-}
-
-ul {
   list-style: none;
 }
 
 ul li {
   position: relative;
+  margin-top: 0.5rem;
+  padding-left: 2rem;
 }
 
 ul li::before {
@@ -101,6 +106,50 @@ ul li::before {
   transform: translateY(-50%);
 }
 
-.prepTime-item strong {
-  /* padding-left: 0.5rem; */
+ol {
+  padding-left: 2rem;
+}
+
+ol strong {
+  padding-left: 1.2rem;
+}
+
+ol li {
+  text-indent: -2.2rem;
+  margin-bottom: 0.5rem;
+}
+.instruction-container {
+  /* margin-bottom: 1rem; */
+  /* margin-right: .5rem; */
+  padding: 0 0.2rem;
+}
+
+.line {
+  margin: 2rem 0 1.7rem 0;
+  border: none;
+  height: 0.1rem;
+  background-color: var(--Stone-150);
+}
+
+.nutrient-container {
+  padding: 0 0.2rem;
+}
+.nutrition-intro {
+  margin-bottom: 1rem;
+}
+.nutrient-container .nutrient {
+  display: inline-block;
+  width: 48%;
+  padding: 0.5rem 0 0.4rem 2rem;
+}
+.nutrient-container .nutrient-value {
+  padding-left: 1rem;
+  width: 50%;
+  text-align: left;
+  color: var(--Brown-800);
+}
+
+.nutrient-container .line {
+  margin: 0.2rem 0;
+  background-color: var(--Stone-100);
 }
